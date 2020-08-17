@@ -49,7 +49,7 @@ func checkFlags(operation string) error {
 		"status": true,
 	}
 
-	if ops[operation] != true {
+	if !ops[operation] {
 		return fmt.Errorf("invalid operation:" + operation)
 	}
 
